@@ -1,11 +1,13 @@
+require("dotenv").config();
+
 const creds = {
-  userName: "Shiva",
-  password: "iamatbottle",
-  strategy: "password",
+  userName: process.env.RIGO_USERNAME,
+  password: process.env.PASSWORD,
+  strategy: process.env.STRATEGY,
 };
 
 const urls = {
-  BASE_URL: "https://bottle.rigohr.com/v1",
+  BASE_URL: process.env.RIGO_BASE_URL,
 };
 
 module.exports = { creds, urls };
