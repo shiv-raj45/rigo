@@ -15,7 +15,6 @@ app.get("/rigo/clockin", async (req, res) => {
 });
 
 app.get("/rigo/clockout", async (req, res) => {
-  res.send(process.env.RIGO_USERNAME);
   const signinData = await signin(creds);
   const token = signinData?.Data?.Token;
   const clockOutData = await attendence(token, false);
