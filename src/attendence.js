@@ -22,7 +22,7 @@ const attendence = async (token, clockingIn) => {
 
     if (status === 200) {
       console.log("clocked in");
-      return urls.BASE_URL;
+      return data;
     }
   } catch (error) {
     console.log("error occured", error.message);

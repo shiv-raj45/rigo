@@ -1,11 +1,11 @@
 const creds = {
-  userName: process.env.RIGO_USERNAME,
-  password: process.env.PASSWORD,
-  strategy: process.env.STRATEGY,
+  userName: "Shiva",
+  password: "iamatbottle",
+  strategy: "password",
 };
 
 const urls = {
-  BASE_URL: process.env.RIGO_BASE_URL,
+  BASE_URL: "https://bottle.rigohr.com/v1",
 };
 
 module.exports = { creds, urls };
