@@ -11,7 +11,7 @@ const attendence = async (token, clockingIn) => {
       Authorization: `Bearer ${token}`,
     };
     const bodyData = {
-      ManualVisibleTime: "10:12:23 am",
+      ManualVisibleTime: clockingIn ? "10:12:23 am" : "19:02:20 pm",
     };
 
     const { status, data } = await axios.post(
